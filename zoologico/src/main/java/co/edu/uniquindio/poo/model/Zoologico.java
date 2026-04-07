@@ -56,4 +56,13 @@ public class Zoologico {
     }
 
 
+    public void saltar(){
+        for(Animal aux2 : listaAnimales){
+            if( aux2 instanceof Saltarin ){
+
+            }
+
+        }
+    }
+
 }

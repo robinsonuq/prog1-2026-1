@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo.model;
 
-public class Gato extends Animal {
+public class Gato extends Saltarin {
 
 
     private int numeroBigotes;
@@ -33,5 +33,19 @@ public class Gato extends Animal {
     @Override
     public String hacerSonido() {
         return "El gato hace miau miau";
+    }
+
+    public void irArenero(){
+        System.out.println("El gato va al arenero");
+    }
+
+    @Override
+    public void saltar() {
+        System.out.println("El gato va al saltar");
+    }
+
+    @Override
+    public String comer(String comida) {
+        return super.comer(comida);
     }
 }

@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo.model;
 
-public class Perro extends Animal{
+public class Perro extends Saltarin{
 
     private String raza;
 
@@ -9,10 +9,13 @@ public class Perro extends Animal{
         this.raza = raza;
     }
 
-    public String hacerSonido(){
-        return "Hola bebe como estas";
-    }
     public String guauGuau(){
         return "Guau guau";
+    }
+
+
+    @Override
+    public void saltar() {
+
     }
 }

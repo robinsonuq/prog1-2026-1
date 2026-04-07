@@ -1,8 +1,6 @@
 package co.edu.uniquindio.poo;
 
-import co.edu.uniquindio.poo.model.Animal;
-import co.edu.uniquindio.poo.model.Gato;
-import co.edu.uniquindio.poo.model.Zoologico;
+import co.edu.uniquindio.poo.model.*;
 
 import javax.swing.*;
 
@@ -13,14 +11,34 @@ public class Main {
 
         Zoologico zoologico = new Zoologico("UKUMARY");
 
-        Animal animal = new Gato("Simba","2523","Panthera Leo","cafe",
-                        "Macho",(byte)10,6,7);
+        Gato gato = new Gato("Michi","2","Felinus","negro",
+                        "Macho",(byte)3,6,7);
 
-        String resultado = zoologico.registraAnimal(animal);
+        Animal animal1 = new Leon("Michi","2","Felinus","negro",
+                "Macho",(byte)3);
+
+        Perro perro = new Perro( "Hachiko", "3", "taxonomia", "Dorado", "M", (byte) 12,"");
+
+
+
+
+
+
+
+
+
+
+
+
+
+        String resultado = zoologico.registraAnimal(gato);
+        String resultado2 = zoologico.registraAnimal(animal1);
+        String resultado3 = zoologico.registraAnimal(perro);
+
+
+
         JOptionPane.showMessageDialog(null, resultado);
 
-       String sonido = animal.hacerSonido();
 
-       JOptionPane.showMessageDialog(null, sonido);
     }
 }

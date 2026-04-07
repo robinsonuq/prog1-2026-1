@@ -70,11 +70,12 @@ public abstract class Animal {
 
 
     public String comer(String comida){
-        return "El animal esta comiendo : "+comida;
+        return "El animal "+nombre+" esta comiendo : "+comida;
     }
-    public String hacerSonido(){
-        return "El animal esta haciendo un ruido";
-    }
+
+
+    public abstract String hacerSonido();
+
     public String dormir(){
         return "El animal esta durmiendo";
     }
